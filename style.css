@@ -1,0 +1,197 @@
+/* Styling for the chat bot */
+
+.jumbotron {
+  
+background-image:url('images/chatbot.jpg');
+
+height: 150px;
+  
+background-repeat: no-repeat;
+  
+background-size: cover;
+
+}
+
+
+.jumbotron .header_all {
+ 
+  height: 120px;
+
+}
+
+
+.jumbotron .header_all .title1
+{ 
+    margin-left: 180px;
+    width: 1000px;
+    position: center;
+    height: 80px; 
+    text-align:center;
+    color: #ffffff;
+}
+
+.container {
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+    justify-content: center;
+    margin-top:20px;
+
+}
+
+.dialogContainer {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    margin: 0;
+    border-radius: 4px;
+    padding: 10px;
+    background-image: -moz-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("images/logo.png");
+    background-image: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("images/logo.png");
+    background-image: -ms-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("images/logo.png");
+    background-image: linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url("images/logo.png");
+    background-attachment: inherit;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 5px solid rgba(67, 16, 104,1.0);
+}
+.chat-title {
+  flex: 0 1 45px;
+  position: relative;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 10px 10px 10px 50px;
+  
+  h1, h2 {
+    font-weight: normal;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    color: rgba(255, 255, 255, .5);
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  
+  .avatar {
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    left: 9px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 2px solid rgba(255, 255, 255, 0.24);
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.dialogInput {
+    width: 300px;
+    margin-top: 15px;
+    border: 2px solid rgba(67, 16, 104,1.0);
+    height: 40px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 10px;
+    color: #000000;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.message1 {
+    margin-top: 0.5em;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+ 
+}
+
+.bot {
+	color:white;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: rgba(67, 16, 104,1.0);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-left: 0.5em;
+    margin-right: 30%;
+    -webkit-align-self: flex-start;
+    align-self: flex-start;
+	-webkit-animation: fadein 2s; 
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s; 
+            animation: fadein 2s;
+}
+
+.user {
+	color:white;
+    padding: 0.5em;
+    border-radius: 5px;
+    background-color: rgba(121, 31, 186,1.0);
+    margin-right: 0.5em;
+    margin-left: 30%;
+    -webkit-align-self: flex-end;
+    align-self: flex-end;
+	-webkit-animation: fadein 1s; 
+       -moz-animation: fadein 1s;
+        -ms-animation: fadein 1s; 
+         -o-animation: fadein 1s; 
+            animation: fadein 1s;
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+
+
